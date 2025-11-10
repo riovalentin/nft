@@ -1,0 +1,8 @@
+export const metadata = { title: "Cyberpunk PFP Mini App" };
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body style={{ fontFamily: "Inter, system-ui, sans-serif" }}>{children}</body>
+    </html>
+  );
+}

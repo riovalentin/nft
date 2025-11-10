@@ -1,0 +1,38 @@
+{
+  "name": "cyberpunk-pfp-miniapp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile:contracts": "hardhat compile",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.ts --network baseSepolia",
+    "deploy:base-mainnet": "hardhat run scripts/deploy.ts --network baseMainnet"
+  },
+  "dependencies": {
+    "@farcaster/auth-kit": "latest",
+    "@neynar/nodejs-sdk": "latest",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "next": "14.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.33.2",
+    "wagmi": "^2.12.7",
+    "viem": "^2.21.14",
+    "web3.storage": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "eslint": "8.57.0",
+    "eslint-config-next": "14.2.5",
+    "hardhat": "^2.22.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
